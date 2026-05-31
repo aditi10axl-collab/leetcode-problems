@@ -9,10 +9,11 @@ class Solution:
             # Pichle number se match kare toh aage badho (pehle element ka duplicate check)
             if base_idx > 0 and nums[base_idx] == nums[base_idx - 1]:
                 continue
+            
                 
             # Do pointers set kiye: ek aage se, ek peeche se
             low = base_idx + 1
-            high = n - 1
+            high = n - 1                                         
             
             while low < high:
                 current_sum = nums[base_idx] + nums[low] + nums[high]
